@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Main from "./UI/Main";
+import Header from "./components/Header";
+import HeadingText from "./components/HeadingText";
+import Categories from "./components/Categories";
+import Presentation from "./components/Presentation";
+import Work from "./components/Work";
+import CallBooking from "./components/CallBooking";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Main>
+  <Header style="" buttonStyle="bg-[#030303] hover:bg-[#755CDE] "/>
+  <HeadingText />
+  <Categories />
+  <Presentation />
+  <Work />
+  <CallBooking />
+  <Header style="mt-[42px] pb-[34px] sm:mt-[56px] sm:pb-[56px] lg:pb-[64px]"  buttonStyle="bg-[#030303] hover:bg-[#755CDE] "/>
+
+
+</Main>
   );
 }
 
